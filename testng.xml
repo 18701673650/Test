@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" allow-return-values="true" parallel="instances"
+	thread-count="5">
+	<test name="商户普通买票退票" enabled="true" parallel="false">
+		<classes>
+			<listeners>
+				<listener class-name="org.uncommons.reportng.HTMLReporter" />
+				<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+			</listeners>
+			<class name="com.busAPP_IOS.run.RunTestCase">
+				<methods>
+					<include name="senic_order" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="商户演艺买票退票" enabled="true" parallel="false">
+		<classes>
+			<listeners>
+				<listener class-name="org.uncommons.reportng.HTMLReporter" />
+				<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+			</listeners>
+			<class name="com.busAPP_IOS.run.RunTestCase">
+				<methods>
+					<include name="acting_senic_order" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="商户通用买票退票" enabled="true" parallel="false">
+		<classes>
+			<listeners>
+				<listener class-name="org.uncommons.reportng.HTMLReporter" />
+				<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+			</listeners>
+			<class name="com.busAPP_IOS.run.RunTestCase">
+				<methods>
+					<include name="universal_scenic_order" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="导游普通买票退票" enabled="true" parallel="false">
+		<classes>
+			<listeners>
+				<listener class-name="org.uncommons.reportng.HTMLReporter" />
+				<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+			</listeners>
+			<class name="com.busAPP_IOS.run.RunTestCase">
+				<methods>
+					<include name="cube_senic_order" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="导游演艺买票退票" enabled="true" parallel="false">
+		<classes>
+			<listeners>
+				<listener class-name="org.uncommons.reportng.HTMLReporter" />
+				<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+			</listeners>
+			<class name="com.busAPP_IOS.run.RunTestCase">
+				<methods>
+					<include name="cube_acting_senic_order" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="导游通用买票退票" enabled="true" parallel="false">
+		<classes>
+			<listeners>
+				<listener class-name="org.uncommons.reportng.HTMLReporter" />
+				<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+			</listeners>
+			<class name="com.busAPP_IOS.run.RunTestCase">
+				<methods>
+					<include name="cube_universal_scenic_order" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

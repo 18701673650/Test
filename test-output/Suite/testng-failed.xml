@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="instances" allow-return-values="true">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="商户普通买票退票(failed)">
+    <classes>
+      <class name="com.busAPP_IOS.run.RunTestCase">
+        <methods>
+          <include name="senic_order"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+        </methods>
+      </class> <!-- com.busAPP_IOS.run.RunTestCase -->
+    </classes>
+  </test> <!-- 商户普通买票退票(failed) -->
+  <test name="商户演艺买票退票(failed)">
+    <classes>
+      <class name="com.busAPP_IOS.run.RunTestCase">
+        <methods>
+          <include name="acting_senic_order"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+        </methods>
+      </class> <!-- com.busAPP_IOS.run.RunTestCase -->
+    </classes>
+  </test> <!-- 商户演艺买票退票(failed) -->
+  <test name="商户通用买票退票(failed)">
+    <classes>
+      <class name="com.busAPP_IOS.run.RunTestCase">
+        <methods>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="universal_scenic_order"/>
+        </methods>
+      </class> <!-- com.busAPP_IOS.run.RunTestCase -->
+    </classes>
+  </test> <!-- 商户通用买票退票(failed) -->
+  <test name="导游普通买票退票(failed)">
+    <classes>
+      <class name="com.busAPP_IOS.run.RunTestCase">
+        <methods>
+          <include name="cube_senic_order"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+        </methods>
+      </class> <!-- com.busAPP_IOS.run.RunTestCase -->
+    </classes>
+  </test> <!-- 导游普通买票退票(failed) -->
+  <test name="导游演艺买票退票(failed)">
+    <classes>
+      <class name="com.busAPP_IOS.run.RunTestCase">
+        <methods>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="cube_acting_senic_order"/>
+        </methods>
+      </class> <!-- com.busAPP_IOS.run.RunTestCase -->
+    </classes>
+  </test> <!-- 导游演艺买票退票(failed) -->
+  <test name="导游通用买票退票(failed)">
+    <classes>
+      <class name="com.busAPP_IOS.run.RunTestCase">
+        <methods>
+          <include name="cube_universal_scenic_order"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+          <include name="beforClass"/>
+        </methods>
+      </class> <!-- com.busAPP_IOS.run.RunTestCase -->
+    </classes>
+  </test> <!-- 导游通用买票退票(failed) -->
+</suite> <!-- Failed suite [Suite] -->

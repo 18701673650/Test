@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">6 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 6 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.busAPP_IOS.run.RunTestCase" hash-for-method="acting_senic_order">acting_senic_order</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.busAPP_IOS.run.RunTestCase" hash-for-method="cube_acting_senic_order">cube_acting_senic_order</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.busAPP_IOS.run.RunTestCase" hash-for-method="cube_senic_order">cube_senic_order</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.busAPP_IOS.run.RunTestCase" hash-for-method="cube_universal_scenic_order">cube_universal_scenic_order</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.busAPP_IOS.run.RunTestCase" hash-for-method="senic_order">senic_order</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.busAPP_IOS.run.RunTestCase" hash-for-method="universal_scenic_order">universal_scenic_order</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.busAPP_IOS.run.RunTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="acting_senic_order">
+                  </a> <!-- acting_senic_order -->
+                  <span class="method-name">acting_senic_order</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.busAPP_IOS.run.RunTestCase.logout(RunTestCase.java:240)
+	at com.busAPP_IOS.run.RunTestCase.runTestCase(RunTestCase.java:103)
+	at com.busAPP_IOS.run.RunTestCase.acting_senic_order(RunTestCase.java:30)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(商户演艺买票退票)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cube_acting_senic_order">
+                  </a> <!-- cube_acting_senic_order -->
+                  <span class="method-name">cube_acting_senic_order</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.busAPP_IOS.run.RunTestCase.logout(RunTestCase.java:240)
+	at com.busAPP_IOS.run.RunTestCase.runTestCase(RunTestCase.java:103)
+	at com.busAPP_IOS.run.RunTestCase.cube_acting_senic_order(RunTestCase.java:45)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(导游演艺买票退票)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cube_senic_order">
+                  </a> <!-- cube_senic_order -->
+                  <span class="method-name">cube_senic_order</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.busAPP_IOS.run.RunTestCase.logout(RunTestCase.java:240)
+	at com.busAPP_IOS.run.RunTestCase.runTestCase(RunTestCase.java:103)
+	at com.busAPP_IOS.run.RunTestCase.cube_senic_order(RunTestCase.java:40)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(导游普通买票退票)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cube_universal_scenic_order">
+                  </a> <!-- cube_universal_scenic_order -->
+                  <span class="method-name">cube_universal_scenic_order</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.busAPP_IOS.run.RunTestCase.logout(RunTestCase.java:240)
+	at com.busAPP_IOS.run.RunTestCase.runTestCase(RunTestCase.java:103)
+	at com.busAPP_IOS.run.RunTestCase.cube_universal_scenic_order(RunTestCase.java:50)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(导游通用买票退票)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="senic_order">
+                  </a> <!-- senic_order -->
+                  <span class="method-name">senic_order</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.busAPP_IOS.run.RunTestCase.logout(RunTestCase.java:240)
+	at com.busAPP_IOS.run.RunTestCase.runTestCase(RunTestCase.java:103)
+	at com.busAPP_IOS.run.RunTestCase.senic_order(RunTestCase.java:25)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(商户普通买票退票)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="universal_scenic_order">
+                  </a> <!-- universal_scenic_order -->
+                  <span class="method-name">universal_scenic_order</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.busAPP_IOS.run.RunTestCase.logout(RunTestCase.java:240)
+	at com.busAPP_IOS.run.RunTestCase.runTestCase(RunTestCase.java:103)
+	at com.busAPP_IOS.run.RunTestCase.universal_scenic_order(RunTestCase.java:35)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(商户通用买票退票)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/mini/Documents/workspace/busAPP_IOS/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; parallel=&quot;instances&quot; allow-return-values=&quot;true&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;商户普通买票退票&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.busAPP_IOS.run.RunTestCase&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;senic_order&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.busAPP_IOS.run.RunTestCase --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 商户普通买票退票 --&gt;
+  &lt;test name=&quot;商户演艺买票退票&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.busAPP_IOS.run.RunTestCase&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;acting_senic_order&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.busAPP_IOS.run.RunTestCase --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 商户演艺买票退票 --&gt;
+  &lt;test name=&quot;商户通用买票退票&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.busAPP_IOS.run.RunTestCase&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;universal_scenic_order&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.busAPP_IOS.run.RunTestCase --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 商户通用买票退票 --&gt;
+  &lt;test name=&quot;导游普通买票退票&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.busAPP_IOS.run.RunTestCase&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;cube_senic_order&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.busAPP_IOS.run.RunTestCase --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 导游普通买票退票 --&gt;
+  &lt;test name=&quot;导游演艺买票退票&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.busAPP_IOS.run.RunTestCase&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;cube_acting_senic_order&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.busAPP_IOS.run.RunTestCase --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 导游演艺买票退票 --&gt;
+  &lt;test name=&quot;导游通用买票退票&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.busAPP_IOS.run.RunTestCase&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;cube_universal_scenic_order&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.busAPP_IOS.run.RunTestCase --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 导游通用买票退票 --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">商户普通买票退票 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">商户演艺买票退票 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">商户通用买票退票 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">导游普通买票退票 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">导游演艺买票退票 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">导游通用买票退票 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'senic_order')
+data.setCell(0, 2, 'com.busAPP_IOS.run.RunTestCase')
+data.setCell(0, 3, 6027);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'acting_senic_order')
+data.setCell(1, 2, 'com.busAPP_IOS.run.RunTestCase')
+data.setCell(1, 3, 2661);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'cube_acting_senic_order')
+data.setCell(2, 2, 'com.busAPP_IOS.run.RunTestCase')
+data.setCell(2, 3, 2441);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'universal_scenic_order')
+data.setCell(3, 2, 'com.busAPP_IOS.run.RunTestCase')
+data.setCell(3, 3, 2431);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'cube_senic_order')
+data.setCell(4, 2, 'com.busAPP_IOS.run.RunTestCase')
+data.setCell(4, 3, 2404);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'cube_universal_scenic_order')
+data.setCell(5, 2, 'com.busAPP_IOS.run.RunTestCase')
+data.setCell(5, 3, 2310);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">30 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.busAPP_IOS.run.RunTestCase</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">senic_order</span>
+                <br/>
+                <span class="ignored-method-name">cube_universal_scenic_order</span>
+                <br/>
+                <span class="ignored-method-name">senic_order</span>
+                <br/>
+                <span class="ignored-method-name">cube_universal_scenic_order</span>
+                <br/>
+                <span class="ignored-method-name">senic_order</span>
+                <br/>
+                <span class="ignored-method-name">cube_universal_scenic_order</span>
+                <br/>
+                <span class="ignored-method-name">senic_order</span>
+                <br/>
+                <span class="ignored-method-name">cube_universal_scenic_order</span>
+                <br/>
+                <span class="ignored-method-name">senic_order</span>
+                <br/>
+                <span class="ignored-method-name">cube_universal_scenic_order</span>
+                <br/>
+                <span class="ignored-method-name">acting_senic_order</span>
+                <br/>
+                <span class="ignored-method-name">acting_senic_order</span>
+                <br/>
+                <span class="ignored-method-name">acting_senic_order</span>
+                <br/>
+                <span class="ignored-method-name">acting_senic_order</span>
+                <br/>
+                <span class="ignored-method-name">acting_senic_order</span>
+                <br/>
+                <span class="ignored-method-name">universal_scenic_order</span>
+                <br/>
+                <span class="ignored-method-name">universal_scenic_order</span>
+                <br/>
+                <span class="ignored-method-name">universal_scenic_order</span>
+                <br/>
+                <span class="ignored-method-name">universal_scenic_order</span>
+                <br/>
+                <span class="ignored-method-name">universal_scenic_order</span>
+                <br/>
+                <span class="ignored-method-name">cube_senic_order</span>
+                <br/>
+                <span class="ignored-method-name">cube_senic_order</span>
+                <br/>
+                <span class="ignored-method-name">cube_senic_order</span>
+                <br/>
+                <span class="ignored-method-name">cube_senic_order</span>
+                <br/>
+                <span class="ignored-method-name">cube_senic_order</span>
+                <br/>
+                <span class="ignored-method-name">cube_acting_senic_order</span>
+                <br/>
+                <span class="ignored-method-name">cube_acting_senic_order</span>
+                <br/>
+                <span class="ignored-method-name">cube_acting_senic_order</span>
+                <br/>
+                <span class="ignored-method-name">cube_acting_senic_order</span>
+                <br/>
+                <span class="ignored-method-name">cube_acting_senic_order</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.busAPP_IOS.run.RunTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">senic_order</span>
+                <span class="method-start">638 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">beforClass</span>
+                <span class="method-start">6910 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">acting_senic_order</span>
+                <span class="method-start">6918 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">beforClass</span>
+                <span class="method-start">9584 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">universal_scenic_order</span>
+                <span class="method-start">9598 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">beforClass</span>
+                <span class="method-start">12034 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cube_senic_order</span>
+                <span class="method-start">12041 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">beforClass</span>
+                <span class="method-start">14708 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cube_acting_senic_order</span>
+                <span class="method-start">14715 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">beforClass</span>
+                <span class="method-start">17182 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cube_universal_scenic_order</span>
+                <span class="method-start">17188 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
